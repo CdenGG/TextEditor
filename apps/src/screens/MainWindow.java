@@ -1,23 +1,37 @@
 package screens;
 
-
 import javax.swing.*;
 
-public class MainWindow extends JFrame {
+public class MainWindow {
 
-    private JFrame window;
-
+  JFrame window = new JFrame();
+     
     public MainWindow() {
-        window = new JFrame();
-        window.setTitle("Hello World!");
+        initialize();
+        makeVisible();
+    }
+
+    public void makeVisible() {
+        window.setVisible(true);
+        
+    }
+
+    private void initialize() {
+        
+        
+        window.setTitle("Text-micro");
         window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         window.setSize(800,500);
         window.setLocationRelativeTo(null);
-
+        window.setResizable(false);
+        
     }
 
-    public void show() {
-        window.setVisible(true);
+
+    public JFrame getWindow() {
+
+        return this.window;
     }
-    
+
 }
+

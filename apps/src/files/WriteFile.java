@@ -1,7 +1,7 @@
 package files;
 
 
-import screens.SuccessfulSaveDialog;
+import Dialogs.SuccessfulSaveDialog;
 
 import javax.swing.*;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package screens;
+package Dialogs;
 
 import javax.swing.*;
 
@@ -9,6 +9,6 @@ public class SuccessfulSaveDialog {
 	}
 
 	public void saveDialog() {
-		JOptionPane.showMessageDialog(null, "Successfully saved!", "", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Successfully saved!", "Saving...", JOptionPane.INFORMATION_MESSAGE);
 	}
 }

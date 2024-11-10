@@ -1,7 +1,7 @@
 package ActionListeners;
 
 import files.WriteFile;
-import screens.HelpDialog;
+import Dialogs.HelpDialog;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;

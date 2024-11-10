@@ -4,34 +4,28 @@ import javax.swing.*;
 
 public class MainWindow {
 
-  JFrame window = new JFrame();
-     
-    public MainWindow() {
-        initialize();
-        makeVisible();
-    }
+	JFrame window = new JFrame();
 
-    public void makeVisible() {
-        window.setVisible(true);
-        
-    }
+	public MainWindow() {
+		initialize();
+		makeVisible();
+	}
 
-    private void initialize() {
-        
-        
-        window.setTitle("Text-micro");
-        window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        window.setSize(800,500);
-        window.setLocationRelativeTo(null);
-        window.setResizable(false);
-        
-    }
+	public void makeVisible() {
+		window.setVisible(true);
+	}
 
+	public void initialize() {
+		window.setTitle("Text-micro");
+		window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		window.setSize(750, 750);
+		window.setLocationRelativeTo(null);
+		window.setResizable(true);
+	}
 
-    public JFrame getWindow() {
-
-        return this.window;
-    }
+	public JFrame getWindow() {
+		return this.window;
+	}
 
 }
 

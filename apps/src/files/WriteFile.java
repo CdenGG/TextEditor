@@ -11,13 +11,15 @@ public class WriteFile {
 
 	SuccessfulSaveDialog saveDialog = new SuccessfulSaveDialog();
 	private JTextArea textArea;
+	private String fileName = "";
 
 
 	public WriteFile() {
 
 	}
 
-	public WriteFile(JTextArea textArea) {
+	public WriteFile(JTextArea textArea, String fileName) {
+		this.fileName = fileName;
 		this.textArea = textArea;
 	}
 
@@ -25,9 +27,21 @@ public class WriteFile {
 		this.textArea = textArea;
 	}
 
-	public void toTextFile() {
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
 
-		try (FileWriter writer = new FileWriter("output.txt")) {
+
+
+	public void toTextFile() {
+		fileName = saveDialog.saveInquiryDialog();
+
+		if (fileName.isEmpty()) {
+			fileName = "DEFAULT";
+		}
+
+		String fileType = ".txt";
+		try (FileWriter writer = new FileWriter(fileName.concat(fileType))) {
 			writer.write(textArea.getText());
 
 			saveDialog.saveDialog();

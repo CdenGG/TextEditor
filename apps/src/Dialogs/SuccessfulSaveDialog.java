@@ -8,7 +8,11 @@ public class SuccessfulSaveDialog {
 
 	}
 
+	public String saveInquiryDialog() {
+		return JOptionPane.showInputDialog("Please input title");
+	}
+
 	public void saveDialog() {
-		JOptionPane.showMessageDialog(null, "Successfully saved!", "Saving...", JOptionPane.INFORMATION_MESSAGE);
+		JOptionPane.showMessageDialog(null, "Successfully saved!", null, JOptionPane.INFORMATION_MESSAGE);
 	}
 }

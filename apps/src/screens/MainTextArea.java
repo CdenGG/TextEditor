@@ -1,6 +1,7 @@
 package screens;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class MainTextArea {
 
@@ -17,6 +18,10 @@ public class MainTextArea {
 		textArea.setLineWrap(true);
 		textArea.setWrapStyleWord(true);
 		textArea.setVisible(true);
+		textArea.setBackground(Color.BLACK);
+		textArea.setCaretColor(Color.WHITE);
+
+		textArea.setForeground(Color.WHITE);
 
 	}
 

@@ -1,6 +1,7 @@
 package screens;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class MainScrollPane {
 
@@ -14,6 +15,7 @@ public class MainScrollPane {
 	private void initialize() {
 		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+		scrollPane.setForeground(Color.DARK_GRAY);
 	}
 
 	public JScrollPane getScrollPane() {
